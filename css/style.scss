@@ -4,14 +4,16 @@
     padding: 0px;
 }
 
-$font-family:(font1:Helvetica, font2:Georgia, font3:sans-serif
-);
+$colores:(background1:#10b8aa, background2:#569ea5, background3:#cefafc);
+
+
+
 
 #header{
     display: flex;
     flex-direction:row;
     background-image: url(../img/Body1);
-    background-color: #cefafc; /* Si la img no funciona */
+    background-color:map-get($colores: $background3); /* Si la img no funciona */
     background-position: center; /* Centra la img */
     background-repeat: no-repeat; /* No repite la img */
     background-size: cover; /* Cambiar el tamaño de la imagen de fondo para cubrir todo el contenedor */
@@ -35,7 +37,7 @@ $font-family:(font1:Helvetica, font2:Georgia, font3:sans-serif
 
 #footer{
     background-image: url(../img/Body1);
-    background-color: #10b8aa; /* Si la img no funciona */ 
+    background-color:map-get($colores: $background1); /* Si la img no funciona */ 
     background-position: center; /* Centra la img */
     background-repeat: no-repeat; /* No repite la img */
     background-size: cover; /* Cambiar el tamaño de la imagen de fondo para cubrir todo el contenedor */
@@ -92,7 +94,7 @@ $font-family:(font1:Helvetica, font2:Georgia, font3:sans-serif
         font-size: xx-large;
         color: $color-text;
         letter-spacing: 1px;
-        background-color: #569ea5;
+        background-color:map-get($colores: $background2);
         width: 100%;
       }
     .contenedor-img{
@@ -261,7 +263,7 @@ $font-family:(font1:Helvetica, font2:Georgia, font3:sans-serif
     transform: scale(1.1);
 }
 
-
+    
 @media  screen and (max-width: 800px) {
     .nav-list{
         display: grid;
@@ -340,6 +342,7 @@ $font-family:(font1:Helvetica, font2:Georgia, font3:sans-serif
     }
 
     .article-med{
+        @extend .article-psico;
         padding: 0px;
         margin-left: 0px;
     }
