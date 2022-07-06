@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Centro Deportivo Integral LifeLine - Contacte personalmente nuestros profesionales">
-    <title>LifeLine | Turnos OnLine</title>
+    <title>LifeLine | Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -28,10 +28,7 @@
                     <a class="nav-link" href="../pages/profesionales.html" style="padding: 30px">Profesionales</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/nutricion.html" style="padding: 30px">Nutrición</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/medicina.html"style="padding: 30px">Medicina</a>
+                    <a class="nav-link" href="../pages/servicios.html" style="padding: 30px">Servicios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/contacto.html"style="padding: 30px">Contacto</a>
@@ -42,32 +39,49 @@
           </nav>                     
     </header>
 
-    <main id="main-turnos">
-
-        <section class="section">
-            <img src="../img/turnosr.png" class="img-turnos" alt="imgturnos">
-        </section>
-
-        <aside class="aside">
+    <main class="main-contacto">
+        <section class="section-contacto">
+          
+          <div>
             <form class="form-turnos" action="" method="post" enctype="multipart/form-data">        
-                <fieldset>
-                    <legend class="form-legend">Datos Personales</legend>
-                    <input class="input-form" type="Nombre" placeholder="Nombre" required>
-                    <input class="input-form" type="Apellido" placeholder="Apellido" required>
-                    <input class="input-form" type="Sexo" placeholder="Sexo">
-                    <input class="input-form" type="Email" placeholder="Email" required>
-                
-                </fieldset>      
-            
-                <select class="botons" name="Profesional">
-                    <option value="Kinesiologia">Kinesiología</option>
-                    <option value="Psicologia">Psicología</option>
-                    <option value="Nutricion">Nutrición</option>
-                    <option value="Medicina">Medicina</option>
-                <input class="botons" type="submit" value="Enviar"/>    
-                </select>
-            </form>
-        </aside>     
+              <fieldset>
+                  <legend class="form-legend">Haga aquí su consulta</legend>
+                  <input class="input-form" type="Nombre" placeholder="Nombre" required>
+                  <input class="input-form" type="Apellido" placeholder="Apellido" required>
+                  <input class="input-form" type="Sexo" placeholder="Email">
+                  <input class="input-form" type="Email" placeholder="Asunto" required>
+                  <textarea name="Consulta" id="Consulta" cols="35" rows="5" placeholder="Escriba de corrido, ejemplo: ¿La clínica atiende por la obra social IAPOS?¿Cuantos bonos debería llevar? Muchas Gracias, espero su respuesta."></textarea>
+              </fieldset>
+              <input class="botons" type="submit" value="Enviar"/>    
+          </form>
+          </div>
+          
+          <div>
+            <form class="form-turnos" action="" method="post" enctype="multipart/form-data">        
+              <fieldset>
+                  <h3 class="form-legend">Le dejamos una breve encuesta</h3>
+
+                  <legend class="form-legend">¿Volveria a atenderse en nuestra clínica?
+                    <input type="radio" name="atencion" id="si" value="si"/>   
+                    <label for="atencion">Si</label>
+                    <input type="radio" name="atencion" id="no" value="no"/>   
+                    <label for="atencion">No</label>
+                  </legend>
+                  
+                  <legend class="form-legend">¿Recomendaría a sus amigos o familiares atenderse con nuestros profesionales?
+                    <input type="radio" name="recomendacion" id="si" value="si"/>   
+                    <label for="recomendacion">Si</label>
+                    <input type="radio" name="recomendacion" id="no" value="no"/>   
+                    <label for="recomendacion">No</label>    
+                  </legend>   
+                  <legend class="form-legend">¿Qué sugerencia nos puede dar para mejorar el servicio de nuestros pacientes?</legend>
+                  <textarea name="Consulta" id="Consulta" cols="35" rows="5" placeholder="Escriba aquí su sugerencia"></textarea>
+              </fieldset>
+              <input class="botons" type="submit" value="Enviar"/>    
+          </form>
+          </div>
+      
+        </section>     
 
     </main>
 
